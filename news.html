@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFA News | Golden Future Academy</title>
+  <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="news.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="news-page">
+
+  <section class="hero news-hero">
+    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+      <source src="assets/intro.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <a href="index.html" class="brand" aria-label="Golden Future Academy Home">
+      <div class="brand-logo">
+        <i class="fa-solid fa-book-open"></i>
+        <span class="sun-icon">☀</span>
+      </div>
+      <div class="brand-text">
+        <strong>Golden Future</strong>
+        <span>Academy</span>
+      </div>
+    </a>
+
+    <nav class="navbar">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="library.html" class="nav-link">Library</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="news.html" class="nav-link active">GFA News</a>
+      <a href="achievements.html" class="nav-link">Achievements</a>
+      <a href="staffs.html" class="nav-link">Staffs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="clubs.html" class="nav-link">ECA/Clubs</a>
+      <a href="about.html" class="nav-link">About us</a>
+    </nav>
+
+    <div class="hero-content news-hero-content">
+      <div class="mini-heading">
+        <span>Stories</span><b>•</b><span>Moments</span><b>•</b><span>News</span>
+      </div>
+      <h1>GFA News<br><em>Episodes</em></h1>
+      <p>Explore the latest GFA News episodes and school moments.</p>
+    </div>
+
+    <button class="sound-button" id="soundButton" aria-label="Unmute video">
+      <i class="fa-solid fa-volume-xmark"></i>
+    </button>
+  </section>
+
+  <main>
+    <section class="news-intro">
+      <div class="news-kicker">GOLDEN FUTURE ACADEMY</div>
+      <h2>GFA News <em>Episodes</em></h2>
+      <p>Watch the episodes below and open the original Facebook Reel when a link is added.</p>
+    </section>
+
+    <section class="news-episodes" id="episodes">
+      <div class="news-grid">
+        
+      <article class="news-episode-card" style="--delay:0ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-01.jpg" alt="GFA News Episode 9">
+          <span class="news-episode-tag">EPISODE 9</span>
+          <button class="news-play" onclick="openEpisode(0)" aria-label="Play episode 9">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 9</div>
+          <h3>Episode 9</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(0)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:55ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-02.jpg" alt="GFA News Episode 7">
+          <span class="news-episode-tag">EPISODE 7</span>
+          <button class="news-play" onclick="openEpisode(1)" aria-label="Play episode 7">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 7</div>
+          <h3>Episode 7</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(1)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:110ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-03.jpg" alt="GFA News Episode 6">
+          <span class="news-episode-tag">EPISODE 6</span>
+          <button class="news-play" onclick="openEpisode(2)" aria-label="Play episode 6">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 6</div>
+          <h3>Episode 6</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(2)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:165ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-04.jpg" alt="GFA News Episode 3">
+          <span class="news-episode-tag">EPISODE 3</span>
+          <button class="news-play" onclick="openEpisode(3)" aria-label="Play episode 3">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 3</div>
+          <h3>Episode 3</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(3)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:220ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-05.jpg" alt="GFA News Episode 4">
+          <span class="news-episode-tag">EPISODE 4</span>
+          <button class="news-play" onclick="openEpisode(4)" aria-label="Play episode 4">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 4</div>
+          <h3>Episode 4</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(4)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:275ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-06.jpg" alt="GFA News Episode 18">
+          <span class="news-episode-tag">EPISODE 18</span>
+          <button class="news-play" onclick="openEpisode(5)" aria-label="Play episode 18">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 18</div>
+          <h3>Episode 18</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(5)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:330ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-07.jpg" alt="GFA News Episode 29">
+          <span class="news-episode-tag">EPISODE 29</span>
+          <button class="news-play" onclick="openEpisode(6)" aria-label="Play episode 29">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 29</div>
+          <h3>Episode 29</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(6)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:385ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-08.jpg" alt="GFA News Episode 26">
+          <span class="news-episode-tag">EPISODE 26</span>
+          <button class="news-play" onclick="openEpisode(7)" aria-label="Play episode 26">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 26</div>
+          <h3>Episode 26</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(7)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:440ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-09.jpg" alt="GFA News Episode 27">
+          <span class="news-episode-tag">EPISODE 27</span>
+          <button class="news-play" onclick="openEpisode(8)" aria-label="Play episode 27">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 27</div>
+          <h3>Episode 27</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(8)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:495ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-10.jpg" alt="GFA News Episode 25">
+          <span class="news-episode-tag">EPISODE 25</span>
+          <button class="news-play" onclick="openEpisode(9)" aria-label="Play episode 25">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 25</div>
+          <h3>Episode 25</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(9)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:550ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-11.jpg" alt="GFA News Episode 30">
+          <span class="news-episode-tag">EPISODE 30</span>
+          <button class="news-play" onclick="openEpisode(10)" aria-label="Play episode 30">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 30</div>
+          <h3>Episode 30</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(10)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="news-episode-card" style="--delay:605ms">
+        <div class="news-episode-image">
+          <img src="assets/news/episode-12.jpg" alt="GFA News Episode 31">
+          <span class="news-episode-tag">EPISODE 31</span>
+          <button class="news-play" onclick="openEpisode(11)" aria-label="Play episode 31">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="news-episode-body">
+          <div class="news-episode-number">EP 31</div>
+          <h3>Episode 31</h3>
+          <p>GFA News</p>
+          <button class="news-watch" onclick="openEpisode(11)">
+            Watch Episode <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <section class="news-closing">
+      <div class="news-closing-shape shape-a"></div>
+      <div class="news-closing-shape shape-b"></div>
+      <div class="news-closing-inner">
+        <div>
+          <div class="news-kicker">GFA • NEWS</div>
+          <h2>Stay connected.<br><em>Keep watching.</em></h2>
+          <p>More school news episodes can be added here anytime.</p>
+        </div>
+        <div class="news-closing-icon"><i class="fa-solid fa-play"></i></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wave"></div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <i class="fa-solid fa-book-open"></i>
+          <span>☀</span>
+        </div>
+        <div>
+          <strong>Golden Future</strong>
+          <small>Academy</small>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <span><i class="fa-solid fa-phone"></i> 046-501118|9854035148</span>
+        <span><i class="fa-solid fa-envelope"></i> gfasarlahi@gmail.com</span>
+        <span><i class="fa-solid fa-location-dot"></i> Lalbandi-9 ,Sarlahi, Nepal</span>
+      </div>
+
+      <div class="footer-slogan">
+        <span>Reaching the new height together</span>
+        <div class="mountain">⌁⌁⌁</div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2026 Golden Future Academy. All rights reserved.
+    </div>
+  </footer>
+
+  <div class="news-modal" id="episodeModal" aria-hidden="true">
+    <div class="news-modal-backdrop" onclick="closeEpisode()"></div>
+    <div class="news-modal-card">
+      <button class="news-modal-close" onclick="closeEpisode()" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="news-kicker">GFA NEWS</div>
+      <h2 id="modalTitle">Episode</h2>
+      <div class="news-video-frame" id="videoFrame"></div>
+      <a class="facebook-link" id="facebookLink" href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook"></i> Open on Facebook
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const episodes = [
+      {number:"9",link:""}, {number:"7",link:""}, {number:"6",link:""},
+      {number:"3",link:"https://www.facebook.com/reel/1099899112096605"}, {number:"4",link:"https://www.facebook.com/reel/1173667298187538"}, {number:"18",link:"https://www.facebook.com/reel/2192270981628609"},
+      {number:"29",link:"https://www.facebook.com/reel/1793411205178761"}, {number:"26",link:"https://www.facebook.com/reel/1506561318180664"}, {number:"27",link:"https://www.facebook.com/reel/1401392981907238"},
+      {number:"25",link:""}, {number:"30",link:"https://www.facebook.com/reel/2947938118886612"}, {number:"31",link:"https://www.facebook.com/reel/1100737099121971"}
+    ];
+
+    const modal = document.getElementById("episodeModal");
+    const frame = document.getElementById("videoFrame");
+    const modalTitle = document.getElementById("modalTitle");
+    const facebookLink = document.getElementById("facebookLink");
+
+    function openEpisode(index) {
+      const item = episodes[index];
+      modalTitle.textContent = "Episode " + item.number;
+      modal.classList.add("show");
+      modal.setAttribute("aria-hidden", "false");
+      frame.innerHTML = "";
+
+      if (!item.link.trim()) {
+        frame.innerHTML = `
+          <div class="news-empty">
+            <div class="news-empty-icon"><i class="fa-brands fa-facebook"></i></div>
+            <h3>Episode ${item.number}</h3>
+            <p>Add the Facebook Reel URL for this episode in the <b>episodes</b> list.</p>
+          </div>`;
+        facebookLink.style.display = "none";
+        return;
+      }
+
+      const url = encodeURIComponent(item.link.trim());
+      frame.innerHTML = `
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?href=${url}&show_text=false"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>`;
+      facebookLink.href = item.link.trim();
+      facebookLink.style.display = "inline-flex";
+    }
+
+    function closeEpisode() {
+      modal.classList.remove("show");
+      modal.setAttribute("aria-hidden", "true");
+      frame.innerHTML = "";
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeEpisode();
+    });
+
+    const heroVideo = document.getElementById("heroVideo");
+    const soundButton = document.getElementById("soundButton");
+
+    soundButton.addEventListener("click", () => {
+      heroVideo.muted = !heroVideo.muted;
+      soundButton.innerHTML = heroVideo.muted
+        ? '<i class="fa-solid fa-volume-xmark"></i>'
+        : '<i class="fa-solid fa-volume-high"></i>';
+    });
+  </script>
+</body>
+</html>

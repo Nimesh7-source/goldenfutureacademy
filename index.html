@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Golden Future Academy</title>
+  <link rel="icon" type="image/png" href="assets/favicon.jpg">
+<title>Home | Golden Future Academy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       HERO / VIDEO SECTION
+       PUT YOUR VIDEO HERE:
+       Replace "YOUR-VIDEO.mp4" with your video file path.
+       Example: src="assets/school-video.mp4"
+       ========================================================= -->
+  <section class="hero">
+
+    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+      <source src="assets/intro.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Soft overlay so text/navigation stays readable -->
+    <div class="hero-overlay"></div>
+
+    <!-- Decorative blurred edges -->
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <!-- Logo -->
+    <a href="#" class="brand">
+      <div class="brand-logo">
+        <!-- Replace this with your actual logo later if you want -->
+        <i class="fa-solid fa-book-open"></i>
+        <span class="sun-icon">☀</span>
+      </div>
+      <div class="brand-text">
+        <strong>Golden Future</strong>
+        <span>Academy</span>
+      </div>
+    </a>
+
+    <!-- Top navigation -->
+    <nav class="navbar">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="library.html" class="nav-link">Library</a>
+      <a href="gallery.com" class="nav-link">Gallery</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="news.html" class="nav-link">GFA News</a>
+      <a href="achievements.html" class="nav-link">Achievements</a>
+      <a href="staffs.html" class="nav-link">Staffs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="clubs.html" class="nav-link">ECA/Clubs</a>
+      <a href="about.html" class="nav-link">About us</a>
+    </nav>
+
+    <!-- Hero text -->
+    <div class="hero-content">
+      <div class="mini-heading">
+        <span>Learn</span>
+        <b>•</b>
+        <span>Grow</span>
+        <b>•</b>
+        <span>Achieve</span>
+      </div>
+
+      <h1>
+        Building Bright<br>
+        Futures <em>Together</em>
+      </h1>
+
+      <p>
+        At Golden Future Academy, we nurture minds,<br>
+        build character and inspire greatness.
+      </p>
+    </div>
+
+    <!-- Mute / unmute -->
+    <button class="sound-button" id="soundButton" aria-label="Unmute video">
+      <i class="fa-solid fa-volume-xmark" id="soundIcon"></i>
+      <span id="soundText">Unmute</span>
+    </button>
+
+    <!-- Decorative curved bottom -->
+    <div class="hero-wave"></div>
+  </section>
+
+
+  <!-- =========================================================
+       NINE HOME PAGE CARDS
+       Replace each image path with your own image later.
+       ========================================================= -->
+  <main class="cards-section">
+
+    <div class="cards-grid">
+
+      <a href="gallery.html" class="info-card card-yellow">
+        <div class="card-image">
+          <img src="assets/gallery.jpg" alt="Gallery">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>Gallery</h2>
+        <p>Moments that<br>inspire us</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="library.html" class="info-card card-blue">
+        <div class="card-image">
+          <img src="assets/library.jpg" alt="Library">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>Library</h2>
+        <p>Books open<br>new worlds</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="facilities.html" class="info-card card-green">
+        <div class="card-image">
+          <img src="assets/facilities.jpg" alt="Facilities">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>Facilities</h2>
+        <p>Better facilities<br>for a brighter you</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="news.html" class="info-card card-purple">
+        <div class="card-image">
+          <img src="assets/news.jpg" alt="GFA News">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>GFA News</h2>
+        <p>Stay updated<br>with our latest</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="achievements.html" class="info-card card-gold">
+        <div class="card-image">
+          <img src="assets/achievements.jpg" alt="Achievements">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>Achievements</h2>
+        <p>Small steps,<br>big milestones</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="staffs.html" class="info-card card-pink">
+        <div class="card-image">
+          <img src="assets/staffs.jpg" alt="Staffs">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>Staffs</h2>
+        <p>Guiding. Supporting.<br>Inspiring.</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="contact.html" class="info-card card-teal">
+        <div class="card-image contact-image">
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>Contact</h2>
+        <p>We're just<br>a message away</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="clubs.html" class="info-card card-orange">
+        <div class="card-image">
+          <img src="assets/eca.jpg" alt="ECA and Clubs">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>ECA/Clubs</h2>
+        <p>Explore • Participate<br>• Grow</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="about.html" class="info-card card-lightblue">
+        <div class="card-image">
+          <img src="assets/about.jpg" alt="About Golden Future Academy">
+        </div>
+        <span class="sparkle">⌁</span>
+        <h2>About us</h2>
+        <p>Our vision • Our values<br>• Our family</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+    </div>
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="footer">
+
+    <div class="footer-wave"></div>
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <i class="fa-solid fa-book-open"></i>
+          <span>☀</span>
+        </div>
+        <div>
+          <strong>Golden Future</strong>
+          <small>Academy</small>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <span><i class="fa-solid fa-phone"></i> 046-501118|9854035148</span>
+        <span><i class="fa-solid fa-envelope"></i> gfasarlahi@gmail.com</span>
+        <span><i class="fa-solid fa-location-dot"></i> Lalbandi-9 ,Sarlahi, Nepal</span>
+      </div>
+
+      <div class="footer-slogan">
+        <span>Reaching the new height together</span>
+        <div class="mountain">⌁⌁⌁</div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Golden Future Academy. All rights reserved.
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

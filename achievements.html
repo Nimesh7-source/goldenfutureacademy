@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Achievements | Golden Future Academy</title>
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+<link rel="stylesheet" href="style4.css"><link rel="stylesheet" href="achievements.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head><body class="achievements-page">
+<section class="hero achievements-hero">
+<video class="hero-video" id="heroVideo" autoplay muted loop playsinline><source src="assets/intro.mp4" type="video/mp4"></video>
+<div class="hero-overlay"></div>
+<a href="index.html" class="brand"><div class="brand-logo"><i class="fa-solid fa-book-open"></i><span class="sun-icon">☀</span></div><div class="brand-text"><strong>Golden Future</strong><span>Academy</span></div></a>
+<nav class="navbar">
+<a href="index.html" class="nav-link">Home</a><a href="library.html" class="nav-link">Library</a><a href="gallery.html" class="nav-link">Gallery</a>
+<a href="facilities.html" class="nav-link">Facilities</a><a href="news.html" class="nav-link">GFA News</a><a href="achievements.html" class="nav-link active">Achievements</a>
+<a href="staffs.html" class="nav-link">Staffs</a><a href="contact.html" class="nav-link">Contact</a><a href="clubs.html" class="nav-link">ECA/Clubs</a><a href="about.html" class="nav-link">About us</a>
+</nav>
+<div class="hero-content achievements-hero-content">
+<div class="mini-heading"><span>Effort</span><b>•</b><span>Excellence</span><b>•</b><span>Achievement</span></div>
+<h1>Our <em>Achievements</em></h1><p>A collection of proud moments from Golden Future Academy — 2083.</p>
+<a href="#achievement-list" class="hero-achievement-button">Explore Achievements <i class="fa-solid fa-arrow-down"></i></a>
+</div>
+<button class="sound-button" id="soundButton"><i class="fa-solid fa-volume-xmark"></i></button>
+</section>
+<main>
+<section class="achievement-intro"><div class="achievement-kicker">GOLDEN FUTURE ACADEMY • 2083</div>
+<h2>Moments we are <em>proud of</em></h2>
+<p>Every achievement tells a story of preparation, teamwork, confidence and determination. Here are some memorable accomplishments of Golden Future Academy in 2083.</p>
+<div class="achievement-stats"><div><strong>6</strong><span>Major Achievements</span></div><div><strong>4</strong><span>1st Place Results</span></div><div><strong>2</strong><span>Runner-Up Results</span></div></div></section>
+<section class="achievement-list" id="achievement-list"><div class="section-heading"><div><span>OUR RECORD</span><h2>Achievements <em>of 2083</em></h2></div><p></p></div>
+<div class="achievement-grid">
+<article class="achievement-card" style="--delay:0ms">
+<div class="achievement-photo">
+<img src="assets/achievements/achievement-01.jpg" alt="PABSON Dance Competition">
+<div class="photo-shade"></div><span class="achievement-year">2083</span>
+<span class="achievement-number">01</span>
+<button class="photo-expand" onclick="openAchievement(0)"><i class="fa-solid fa-expand"></i></button>
+</div>
+<div class="achievement-body">
+<span class="achievement-result">1st Place</span>
+<h3>PABSON Dance Competition</h3><div class="achievement-subtitle">Sarlahi Area 'C'</div>
+<p id="intro-1">Febrary 22 2026</p>
+<button class="read-achievement" onclick="openAchievement(0)">View Achievement <i class="fa-solid fa-arrow-right"></i></button>
+</div></article>
+<article class="achievement-card" style="--delay:70ms">
+<div class="achievement-photo">
+<img src="assets/achievements/achievement-02.jpg" alt="Primary Spelling Competition">
+<div class="photo-shade"></div><span class="achievement-year">2083</span>
+<span class="achievement-number">02</span>
+<button class="photo-expand" onclick="openAchievement(1)"><i class="fa-solid fa-expand"></i></button>
+</div>
+<div class="achievement-body">
+<span class="achievement-result">3rd Position</span>
+<h3>Primary Spelling Competition</h3><div class="achievement-subtitle">2083</div>
+<p id="intro-2">August 8 2026</p>
+<button class="read-achievement" onclick="openAchievement(1)">View Achievement <i class="fa-solid fa-arrow-right"></i></button>
+</div></article>
+<article class="achievement-card" style="--delay:140ms">
+<div class="achievement-photo">
+<img src="assets/achievements/achievement-03.jpg" alt="Inter-School Chess Championship">
+<div class="photo-shade"></div><span class="achievement-year">2083</span>
+<span class="achievement-number">03</span>
+<button class="photo-expand" onclick="openAchievement(2)"><i class="fa-solid fa-expand"></i></button>
+</div>
+<div class="achievement-body">
+<span class="achievement-result">Runner Up</span>
+<h3>Inter-School Chess Championship</h3><div class="achievement-subtitle">2083</div>
+<p id="intro-3">July 8 2026</p>
+<button class="read-achievement" onclick="openAchievement(2)">View Achievement <i class="fa-solid fa-arrow-right"></i></button>
+</div></article>
+<article class="achievement-card" style="--delay:210ms">
+<div class="achievement-photo">
+<img src="assets/achievements/achievement-04.jpg" alt="Inter-School Table Tennis Championship">
+<div class="photo-shade"></div><span class="achievement-year">2083</span>
+<span class="achievement-number">04</span>
+<button class="photo-expand" onclick="openAchievement(3)"><i class="fa-solid fa-expand"></i></button>
+</div>
+<div class="achievement-body">
+<span class="achievement-result">1st Place</span>
+<h3>Inter-School Table Tennis Championship</h3><div class="achievement-subtitle">2083</div>
+<p id="intro-4">July 8 2026</p>
+<button class="read-achievement" onclick="openAchievement(3)">View Achievement <i class="fa-solid fa-arrow-right"></i></button>
+</div></article>
+<article class="achievement-card" style="--delay:280ms">
+<div class="achievement-photo">
+<img src="assets/achievements/achievement-05.jpg" alt="Inter-School Cricket Tournament">
+<div class="photo-shade"></div><span class="achievement-year">2083</span>
+<span class="achievement-number">05</span>
+<button class="photo-expand" onclick="openAchievement(4)"><i class="fa-solid fa-expand"></i></button>
+</div>
+<div class="achievement-body">
+<span class="achievement-result">1st Place</span>
+<h3>Inter-School Cricket Tournament</h3><div class="achievement-subtitle">2083</div>
+<p id="intro-5"></p>
+<button class="read-achievement" onclick="openAchievement(4)">View Achievement <i class="fa-solid fa-arrow-right"></i></button>
+</div></article>
+<article class="achievement-card" style="--delay:350ms">
+<div class="achievement-photo">
+<img src="assets/achievements/achievement-06.jpg" alt="Inter-School Singing Competition">
+<div class="photo-shade"></div><span class="achievement-year">2083</span>
+<span class="achievement-number">06</span>
+<button class="photo-expand" onclick="openAchievement(5)"><i class="fa-solid fa-expand"></i></button>
+</div>
+<div class="achievement-body">
+<span class="achievement-result">Runner Up</span>
+<h3>Inter-School Singing Competition</h3><div class="achievement-subtitle">2083</div>
+<p id="intro-6">September 5 2026</p>
+<button class="read-achievement" onclick="openAchievement(5)">View Achievement <i class="fa-solid fa-arrow-right"></i></button>
+</div></article></div></section>
+<section class="achievement-banner"><div class="banner-orb orb-one"></div><div class="banner-orb orb-two"></div>
+<div class="banner-content"><span>MORE THAN A TROPHY</span><h2>Every achievement<br><em>inspires the next.</em></h2><p>Celebrating the students, teachers and teams who make these moments possible.</p></div>
+<div class="trophy-illustration"><i class="fa-solid fa-trophy"></i></div></section>
+</main>
+<footer class="footer"><div class="footer-wave"></div><div class="footer-inner">
+<div class="footer-brand"><div class="footer-logo"><i class="fa-solid fa-book-open"></i><span>☀</span></div><div><strong>Golden Future</strong><small>Academy</small></div></div>
+<div class="footer-contact"><span><i class="fa-solid fa-phone"></i> 046-501118 | 9854035148</span><span><i class="fa-solid fa-envelope"></i> gfasarlahi@gmail.com</span><span><i class="fa-solid fa-location-dot"></i> Lalbandi-9, Sarlahi, Nepal</span></div>
+<div class="footer-slogan"><span>Reaching the new height together</span><div class="mountain">⌁⌁⌁</div></div></div>
+<div class="copyright">© 2026 Golden Future Academy. All rights reserved.</div></footer>
+<div class="achievement-modal" id="achievementModal"><div class="modal-backdrop" onclick="closeAchievement()"></div><div class="modal-card">
+<button class="modal-close" onclick="closeAchievement()"><i class="fa-solid fa-xmark"></i></button><div class="modal-image-wrap"><img id="modalImage"></div>
+<div class="modal-content"><span id="modalResult"></span><h2 id="modalTitle"></h2><h4 id="modalSubtitle"></h4><p id="modalIntro"></p><div class="modal-year"><i class="fa-regular fa-calendar"></i> 2083</div></div>
+</div></div>
+<script>
+const data=[{result:"1st Place",title:"PABSON Dance Competition",subtitle:"Sarlahi Area 'C'",intro:"Heartiest congratulations to our talented team on winning the PABSON District Level Inter-School Folk Dance Competition! Your dedication, discipline, and vibrant performance have made us immensely proud. Now, it’s time to shine even more brilliantly at the state level.We're grateful to Ram Sir and his team for their guidance, commitment, and tireless training that helped us achieve this. To celebrate the victory, the dance team was taken to Bagaicha Restaurant, where the participants, trainers, mentors, and guides shared ideas and motivated them to excel.Congratulations once again, and best wishes for continued success ahead",image:"assets/achievements/achievement-01.jpg"},
+{result:"3rd Position",title:"Primary Spelling Competition",subtitle:"2083",intro:"Celebrating our young achievers! 🎉Congratulations to Ayushman and Sucess for securing 3rd Position in the Primary Level Spelling Competition, and to Devraj for securing 3rd Position in the Basic Level Nepali Essay Competition organized by PABSON Area C! 📚🏆",image:"assets/achievements/achievement-02.jpg"},
+{result:"Runner Up",title:"Inter-School Chess Championship",subtitle:"2083",intro:"Runner Up at Inter-School Chess ChampionshipMany congratulations to Master Nitish Goshswami!",image:"assets/achievements/achievement-03.jpg"},
+{result:"1st Place",title:"Inter-School Table Tennis Championship",subtitle:"2083",intro:"GFA Books Inter-School Table Tennis ChampionshipYou have made us feel proud, and we also express our sincere gratitude to Mr. Ranjit Mahato and Mr. Pawan Deep Khadka for shaping you up! We are truly gratefu",image:"assets/achievements/achievement-04.jpg"},
+{result:"1st Place",title:"Inter-School Cricket Tournament",subtitle:"2083",intro:"GFA Wins Lalbandi Rising Club Cricket Tournament!Golden Future Academy (GFA) has once again emerged as the champion of the tournament organized by the Lalbandi Rising Club. This remarkable achievement marks GFA's second championship title in the last three editions of the tournament, reflecting the school's consistency, dedication, and sporting excellence.We extend our heartfelt congratulations to the entire GFA Cricket Team for their outstanding performance and unwavering commitment. Our sincere appreciation also goes to the Managing Committee for their continuous support and encouragement throughout the journey.A special note of gratitude and congratulations to our Cricket Coach, Mr. Bikram Karki, whose exceptional guidance, leadership, and dedication have played a vital role in this success.Congratulations to everyone involved in bringing yet another glorious victory to GFA. May this achievement inspire even greater accomplishments in the years to com",image:"assets/achievements/achievement-05.jpg"},
+{result:"Runner Up",title:"Inter-School Singing Competition",subtitle:"2083",intro:"GFA shines at the Inter-School Singing Competition",image:"assets/achievements/achievement-06.jpg"}];
+const modal=document.getElementById("achievementModal");
+function openAchievement(i){let x=data[i];document.getElementById("modalImage").src=x.image;document.getElementById("modalResult").textContent=x.result;document.getElementById("modalTitle").textContent=x.title;document.getElementById("modalSubtitle").textContent=x.subtitle;document.getElementById("modalIntro").textContent=x.intro;modal.classList.add("show");}
+function closeAchievement(){modal.classList.remove("show");}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeAchievement();});
+const v=document.getElementById("heroVideo"),b=document.getElementById("soundButton");
+b.onclick=()=>{v.muted=!v.muted;b.innerHTML=v.muted?'<i class="fa-solid fa-volume-xmark"></i>':'<i class="fa-solid fa-volume-high"></i>';};
+</script></body></html>

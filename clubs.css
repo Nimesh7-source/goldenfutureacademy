@@ -1,0 +1,181 @@
+
+/* =========================================================
+   GFA ECA / CLUBS — SHOWCASE PAGE
+   ========================================================= */
+
+.clubs-page{background:#fbfdfd}
+
+.clubs-hero .hero-content{animation:clubsRise .9s ease both}
+@keyframes clubsRise{
+  from{opacity:0;transform:translateY(25px) scale(.98)}
+  to{opacity:1;transform:none}
+}
+.clubs-hero h1 em,.clubs-intro h2 em,.club-detail h2 em{
+  font-family:Caveat,cursive;color:#d49a2a;font-style:normal;
+}
+.clubs-hero .hero-btn{
+  display:inline-flex;align-items:center;gap:8px;margin-top:20px;
+  padding:12px 18px;border-radius:999px;background:#ffffffe8;color:#173f65;
+  text-decoration:none;font-size:12px;font-weight:900;
+  box-shadow:0 10px 25px #102d4c12;transition:.25s ease;
+}
+.clubs-hero .hero-btn:hover{transform:translateY(-3px)}
+
+.clubs-intro{
+  max-width:1080px;margin:auto;padding:75px 6% 35px;text-align:center;
+}
+.clubs-intro .eyebrow,.club-detail .eyebrow{
+  color:#c58a20;font-size:10px;font-weight:900;letter-spacing:2.7px;
+}
+.clubs-intro h2{
+  color:#102d4c;font-size:clamp(42px,5.2vw,67px);line-height:.88;margin:10px 0 18px;
+}
+.clubs-intro p{
+  max-width:790px;margin:auto;color:#60788c;font-size:14px;line-height:1.75;
+}
+
+/* Floating category chips */
+.club-chips{
+  max-width:1180px;margin:20px auto 38px;padding:0 5%;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:9px;
+}
+.club-chip{
+  border:1px solid #dce9ef;background:#fff;color:#42647c;
+  padding:9px 14px;border-radius:999px;font-size:9px;font-weight:900;
+  letter-spacing:.7px;cursor:pointer;transition:.2s ease;
+}
+.club-chip:hover,.club-chip.active{
+  background:#173f65;color:#fff;border-color:#173f65;transform:translateY(-2px);
+}
+
+/* Club grid */
+.club-grid{
+  max-width:1250px;margin:0 auto 82px;padding:0 5%;
+  display:grid;grid-template-columns:repeat(12,1fr);gap:20px;
+}
+.club-card{
+  position:relative;min-height:450px;overflow:hidden;border-radius:34px;
+  background:#fff;border:1px solid #e5eef3;box-shadow:0 17px 42px #173f6510;
+  transition:.38s cubic-bezier(.2,.8,.2,1);cursor:pointer;
+}
+.club-card:nth-child(1),.club-card:nth-child(4),.club-card:nth-child(7){grid-column:span 4}
+.club-card:nth-child(2),.club-card:nth-child(3),.club-card:nth-child(5),.club-card:nth-child(6){grid-column:span 4}
+.club-card:hover{
+  transform:translateY(-11px) rotate(-.4deg);
+  box-shadow:0 28px 65px #173f6520;
+}
+.club-card.hide{display:none}
+
+.club-image{
+  position:absolute;inset:0;height:100%;width:100%;object-fit:cover;
+  transition:.6s ease;
+}
+.club-card:hover .club-image{transform:scale(1.08)}
+.club-shade{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 17%,#071a2ed0 70%,#071a2ef4 100%);
+}
+.club-top{
+  position:absolute;top:20px;left:20px;right:20px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.club-number{
+  width:43px;height:43px;border-radius:15px;background:#ffffffdf;color:#173f65;
+  display:grid;place-items:center;font-size:11px;font-weight:900;
+  box-shadow:0 8px 20px #0002;
+}
+.club-open{
+  width:43px;height:43px;border-radius:50%;background:#ffffff17;color:#fff;
+  border:1px solid #ffffff35;display:grid;place-items:center;
+  backdrop-filter:blur(10px);transition:.25s ease;
+}
+.club-card:hover .club-open{background:#fff;color:#173f65;transform:rotate(45deg)}
+.club-bottom{position:absolute;left:25px;right:25px;bottom:24px;color:#fff}
+.club-tag{
+  display:inline-flex;padding:6px 9px;border-radius:999px;
+  background:#ffffff19;border:1px solid #ffffff26;backdrop-filter:blur(9px);
+  font-size:8px;letter-spacing:1.5px;font-weight:900;
+}
+.club-bottom h3{
+  font:38px/.9 Caveat,cursive;margin:10px 0 8px;color:#fff;
+}
+.club-bottom p{font-size:10px;line-height:1.55;color:#dce9f2;margin:0;max-width:310px}
+
+/* Spotlight */
+.club-spotlight{
+  max-width:1250px;margin:0 auto 75px;padding:0 5%;
+}
+.spotlight-box{
+  min-height:245px;border-radius:35px;overflow:hidden;position:relative;
+  background:linear-gradient(120deg,#102d4c,#1c5888);
+  box-shadow:0 22px 55px #102d4c20;padding:45px 7%;
+  color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;
+}
+.spotlight-box:after{
+  content:"";position:absolute;width:330px;height:330px;border:1px solid #ffffff13;
+  border-radius:50%;right:-80px;top:-70px;
+}
+.spotlight-copy{position:relative;z-index:2}
+.spotlight-copy .eyebrow{color:#f0bf54;font-size:9px;font-weight:900;letter-spacing:2px}
+.spotlight-copy h3{font:48px/.85 Caveat,cursive;margin:9px 0}
+.spotlight-copy p{font-size:11px;color:#d5e6f0;line-height:1.6;max-width:640px}
+.spotlight-orbit{
+  position:relative;z-index:2;width:135px;height:135px;flex:0 0 135px;
+  border:2px dashed #f0bf54;border-radius:50%;display:grid;place-items:center;
+  animation:orbitSpin 16s linear infinite;
+}
+.spotlight-orbit i{font-size:45px;color:#f0bf54;animation:orbitSpin 16s linear infinite reverse}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+
+/* Modal */
+.club-modal{
+  position:fixed;inset:0;z-index:200;background:#071a2eaa;backdrop-filter:blur(13px);
+  display:none;align-items:center;justify-content:center;padding:25px;
+}
+.club-modal.open{display:flex}
+.club-detail{
+  position:relative;max-width:980px;width:100%;max-height:90vh;overflow:auto;
+  background:#fff;border-radius:34px;box-shadow:0 30px 100px #0005;
+  display:grid;grid-template-columns:.9fr 1.1fr;overflow:hidden;
+}
+.club-detail img{width:100%;height:100%;min-height:500px;object-fit:cover}
+.club-detail-copy{padding:43px}
+.club-detail-copy .club-icon{
+  width:55px;height:55px;border-radius:17px;background:#edf6fb;color:#1c4f82;
+  display:grid;place-items:center;font-size:21px;margin-bottom:20px;
+}
+.club-detail h2{font-size:58px;line-height:.86;color:#102d4c;margin:7px 0 18px}
+.club-detail p{color:#60788c;font-size:12px;line-height:1.8}
+.club-pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.club-pill{padding:8px 11px;border-radius:999px;background:#f0f6f9;color:#42647c;font-size:9px;font-weight:900}
+.modal-close{
+  position:absolute;right:18px;top:18px;width:43px;height:43px;border-radius:50%;
+  border:0;background:#ffffffde;color:#173f65;cursor:pointer;z-index:5;
+  box-shadow:0 8px 25px #0002;font-size:15px;
+}
+.modal-close:hover{transform:rotate(90deg)}
+
+/* Bottom quote */
+.clubs-closing{
+  max-width:1250px;margin:0 auto 75px;padding:55px 7%;border-radius:36px;
+  background:linear-gradient(115deg,#fff3d3,#edf7ff);
+  text-align:center;
+}
+.clubs-closing h2{font-size:54px;line-height:.88;color:#102d4c;margin:9px 0 13px}
+.clubs-closing h2 em{font:inherit;font-family:Caveat,cursive;color:#d49a2a}
+.clubs-closing p{max-width:720px;margin:auto;color:#647c8e;font-size:11px;line-height:1.7}
+
+@media(max-width:900px){
+  .club-card:nth-child(n){grid-column:span 6}
+  .club-detail{grid-template-columns:1fr}
+  .club-detail img{min-height:330px;max-height:390px}
+}
+@media(max-width:600px){
+  .club-card:nth-child(n){grid-column:span 12}
+  .clubs-intro{padding-top:55px}
+  .club-detail-copy{padding:28px}
+  .club-detail h2{font-size:45px}
+  .spotlight-box{display:block;padding:35px 28px}
+  .spotlight-orbit{margin-top:25px}
+  .clubs-closing h2{font-size:43px}
+}

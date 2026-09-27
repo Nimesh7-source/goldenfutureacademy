@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gallery | Golden Future Academy</title>
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="gallery.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head><body class="gallery-page">
+<section class="hero gallery-hero">
+<video class="hero-video" id="heroVideo" autoplay muted loop playsinline><source src="assets/intro.mp4" type="video/mp4"></video>
+<div class="hero-overlay"></div>
+<div class="brand"><div class="brand-icon"><i class="fa-solid fa-book-open"></i></div><div><strong>Golden Future</strong><span>Academy</span></div></div>
+<nav class="navbar">
+<a href="index.html" class="nav-link">Home</a><a href="library.html" class="nav-link">Library</a><a href="gallery.html" class="nav-link active">Gallery</a>
+<a href="facilities.html" class="nav-link">Facilities</a><a href="news.html" class="nav-link">GFA News</a><a href="achievements.html" class="nav-link">Achievements</a>
+<a href="staffs.html" class="nav-link">Staffs</a><a href="contact.html" class="nav-link">Contact</a><a href="clubs.html" class="nav-link">ECA / Clubs</a><a href="about.html" class="nav-link">About Us</a>
+</nav>
+<div class="hero-content"><p class="mini-heading">MEMORIES • EVENTS • MOMENTS</p><h1>GFA <span>Gallery</span></h1><p>Explore the moments, celebrations and activities of Golden Future Academy.</p></div>
+<button class="sound-button" id="soundButton"><i class="fa-solid fa-volume-xmark"></i><span>Sound</span></button><div class="hero-wave"></div>
+</section>
+<main class="gallery-main"><div class="gallery-heading"><p>OUR MEMORIES</p><h2>School <span>Functions</span></h2><div>Choose an event to open its complete photo collection.</div></div>
+<div class="g-filter"><button class="active" data-filter="all">All</button><button data-filter="celebration">Celebrations</button><button data-filter="academic">Academic</button><button data-filter="activity">Activities</button><button data-filter="visit">Visits</button></div>
+<section class="g-grid"><article class="g-card" data-category="academic">
+<button class="g-open" onclick="openGallery('electricity')">
+<div class="g-image"><img src="assets/gallery/gallery_1.jpg" alt="Preventive Measures About Electricity" loading="lazy"><span class="g-num">01</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>ACADEMIC</small><h3>Preventive Measures About Electricity</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="celebration">
+<button class="g-open" onclick="openGallery('bishwakarma')">
+<div class="g-image"><img src="assets/gallery/gallery_2.jpg" alt="Happy Bishwakarma Puja!" loading="lazy"><span class="g-num">02</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>CELEBRATION</small><h3>Happy Bishwakarma Puja!</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="academic">
+<button class="g-open" onclick="openGallery('monthly-test')">
+<div class="g-image"><img src="assets/gallery/gallery_3.jpg" alt="The Second Monthly Test" loading="lazy"><span class="g-num">03</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>ACADEMIC</small><h3>The Second Monthly Test</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="celebration">
+<button class="g-open" onclick="openGallery('janamasthmi')">
+<div class="g-image"><img src="assets/gallery/gallery_4.jpg" alt="Krishna Janamasthmi Celebration 2083" loading="lazy"><span class="g-num">04</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>CELEBRATION</small><h3>Krishna Janamasthmi Celebration 2083</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="academic">
+<button class="g-open" onclick="openGallery('financial-literacy')">
+<div class="g-image"><img src="assets/gallery/gallery_5.jpg" alt="Financial Literacy (XI, Management)" loading="lazy"><span class="g-num">05</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>ACADEMIC</small><h3>Financial Literacy (XI, Management)</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="activity">
+<button class="g-open" onclick="openGallery('eca')">
+<div class="g-image"><img src="assets/gallery/gallery_6.jpg" alt="Extra Curricular Activities (Friday)" loading="lazy"><span class="g-num">06</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>ACTIVITY</small><h3>Extra Curricular Activities (Friday)</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="visit">
+<button class="g-open" onclick="openGallery('mill')">
+<div class="g-image"><img src="assets/gallery/gallery_7.jpg" alt="A Visit to Mill (Grade VII)" loading="lazy"><span class="g-num">07</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>VISIT</small><h3>A Visit to Mill (Grade VII)</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="visit">
+<button class="g-open" onclick="openGallery('paththarkot')">
+<div class="g-image"><img src="assets/gallery/gallery_8.jpg" alt="A Visit to Paththarkot (Grade VIII)" loading="lazy"><span class="g-num">08</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>VISIT</small><h3>A Visit to Paththarkot (Grade VIII)</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article><article class="g-card" data-category="visit">
+<button class="g-open" onclick="openGallery('sindhuligadh')">
+<div class="g-image"><img src="assets/gallery/gallery_9.jpg" alt="An Excursion to Sindhuligadh" loading="lazy"><span class="g-num">09</span><span class="g-view"><i class="fa-regular fa-images"></i> View Photos</span></div>
+<div class="g-body"><small>VISIT</small><h3>An Excursion to Sindhuligadh</h3><p>Open memories <i class="fa-solid fa-arrow-right"></i></p></div>
+</button></article></section></main>
+<div class="g-modal" id="eventGalleryModal"><div class="g-backdrop" onclick="closeGallery()"></div><div class="g-panel"><button class="g-close" onclick="closeGallery()">×</button><div class="g-modal-head"><p>EVENT GALLERY</p><h2 id="modalTitle"></h2><span>Click any photo to view it larger.</span></div><div class="g-photos" id="photoGrid"></div></div></div>
+<div class="g-viewer" id="photoViewer"><div class="g-backdrop" onclick="closeViewer()"></div><button class="viewer-close" onclick="closeViewer()">×</button><button class="viewer-prev" onclick="changePhoto(-1)">‹</button><img id="viewerImage"><button class="viewer-next" onclick="changePhoto(1)">›</button><div id="viewerCount"></div></div>
+<footer class="footer"><div><strong>Golden Future Academy</strong><p>Reaching the new height together • Learn • Grow • Shine</p></div><p>© 2026 Golden Future Academy. All rights reserved.</p></footer>
+<script src="script.js"></script>
+<script>
+const data={"electricity":{title:"Preventive Measures About Electricity",folder:"electricity"},"bishwakarma":{title:"Happy Bishwakarma Puja!",folder:"bishwakarma"},"monthly-test":{title:"The Second Monthly Test",folder:"monthly-test"},"janamasthmi":{title:"Krishna Janamasthmi Celebration 2083",folder:"janamasthmi"},"financial-literacy":{title:"Financial Literacy (XI, Management)",folder:"financial-literacy"},"eca":{title:"Extra Curricular Activities (Friday)",folder:"eca"},"mill":{title:"A Visit to Mill (Grade VII)",folder:"mill"},"paththarkot":{title:"A Visit to Paththarkot (Grade VIII)",folder:"paththarkot"},"sindhuligadh":{title:"An Excursion to Sindhuligadh",folder:"sindhuligadh"}};
+let photos=[],idx=0;
+function openGallery(k){const d=data[k],g=document.getElementById("photoGrid");document.getElementById("modalTitle").textContent=d.title;g.innerHTML="";
+for(let i=1;i<=20;i++){let n=String(i).padStart(2,"0"),b=document.createElement("button"),im=document.createElement("img");im.src=`assets/gallery/photos/${d.folder}/${n}.jpg`;im.alt=d.title;b.className="g-photo";b.appendChild(im);im.onerror=()=>b.remove();b.onclick=()=>{photos=[...g.querySelectorAll("img")].map(x=>x.src);idx=photos.indexOf(im.src);showViewer()};g.appendChild(b)}
+document.getElementById("eventGalleryModal").classList.add("show");document.body.classList.add("lock")}
+function closeGallery(){document.getElementById("eventGalleryModal").classList.remove("show");document.body.classList.remove("lock")}
+function showViewer(){if(!photos.length)return;document.getElementById("viewerImage").src=photos[idx];document.getElementById("viewerCount").textContent=`${idx+1} / ${photos.length}`;document.getElementById("photoViewer").classList.add("show")}
+function closeViewer(){document.getElementById("photoViewer").classList.remove("show")}
+function changePhoto(n){idx=(idx+n+photos.length)%photos.length;showViewer()}
+document.querySelectorAll(".g-filter button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".g-filter button").forEach(x=>x.classList.remove("active"));b.classList.add("active");let f=b.dataset.filter;document.querySelectorAll(".g-card").forEach(c=>c.style.display=f==="all"||c.dataset.category===f?"block":"none")});
+document.onkeydown=e=>{if(e.key==="Escape"){closeViewer();closeGallery()}if(e.key==="ArrowRight")changePhoto(1);if(e.key==="ArrowLeft")changePhoto(-1)};
+</script></body></html>

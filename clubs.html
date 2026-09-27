@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECA / Clubs | Golden Future Academy</title>
+<link rel="icon" href="assets/favicon.jpg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="clubs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="clubs-page">
+
+<section class="hero clubs-hero">
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+    <source src="assets/intro.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-glow glow-one"></div>
+  <div class="hero-glow glow-two"></div>
+
+  <a class="brand" href="index.html">
+    <div class="brand-logo"><i class="fa-solid fa-book-open"></i><span class="sun-icon">☀</span></div>
+    <div class="brand-text"><strong>Golden Future</strong><span>Academy</span></div>
+  </a>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="library.html" class="nav-link">Library</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="facilities.html" class="nav-link">Facilities</a>
+    <a href="news.html" class="nav-link">GFA News</a>
+    <a href="achievements.html" class="nav-link">Achievements</a>
+    <a href="staffs.html" class="nav-link">Staffs</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="clubs.html" class="nav-link active">ECA/Clubs</a>
+    <a href="about.html" class="nav-link">About us</a>
+  </nav>
+
+  <div class="hero-content">
+    <div class="mini-heading"><span>Explore</span><b>•</b><span>Create</span><b>•</b><span>Compete</span></div>
+    <h1>Where Every <em>Talent</em> Finds a Place</h1>
+    <p>Seven GFA clubs. Different passions. One community built for students to discover what they can do beyond the classroom.</p>
+    <a class="hero-btn" href="#clubs"><i class="fa-solid fa-compass"></i> Explore the clubs</a>
+  </div>
+
+  <button class="sound-button" id="soundButton" type="button" aria-label="Toggle sound">
+    <i class="fa-solid fa-volume-xmark"></i><span>Sound off</span>
+  </button>
+  <div class="hero-wave"></div>
+</section>
+
+<section class="clubs-intro">
+  <div class="eyebrow">GFA EXTRA-CURRICULAR WORLD</div>
+  <h2>Not just clubs.<br><em>Little worlds of talent.</em></h2>
+  <p>
+    From media and technology to sports, social service, science, arts, music and dance,
+    GFA gives students different spaces to create, collaborate, practise and lead.
+  </p>
+</section>
+
+<div class="club-chips" aria-label="Club filters">
+  <button class="club-chip active" data-filter="all">ALL CLUBS</button>
+  <button class="club-chip" data-filter="media">MEDIA</button>
+  <button class="club-chip" data-filter="tech">TECH</button>
+  <button class="club-chip" data-filter="sports">SPORTS</button>
+  <button class="club-chip" data-filter="social">SOCIAL WORK</button>
+  <button class="club-chip" data-filter="science">SCIENCE</button>
+  <button class="club-chip" data-filter="arts">ARTS</button>
+  <button class="club-chip" data-filter="performing">MUSIC & DANCE</button>
+</div>
+
+<section class="club-grid" id="clubs">
+
+  <article class="club-card" data-category="media" data-club="media">
+    <img class="club-image" src="assets/clubs/club-01.jpg" alt="GFA Media Forge">
+    <div class="club-shade"></div>
+    <div class="club-top"><div class="club-number">01</div><div class="club-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+    <div class="club-bottom">
+      <span class="club-tag">MEDIA</span>
+      <h3>GFA Media Forge</h3>
+      <p>Ideas become stories, visuals and school media through creativity, communication and teamwork.</p>
+    </div>
+  </article>
+
+  <article class="club-card" data-category="tech" data-club="tech">
+    <img class="club-image" src="assets/clubs/club-02.jpg" alt="Computer and Robotics Club">
+    <div class="club-shade"></div>
+    <div class="club-top"><div class="club-number">02</div><div class="club-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+    <div class="club-bottom">
+      <span class="club-tag">TECH & ROBOTICS</span>
+      <h3>Computer & Robotics</h3>
+      <p>Build, code, experiment and turn technology ideas into working projects.</p>
+    </div>
+  </article>
+
+  <article class="club-card" data-category="sports" data-club="sports">
+    <img class="club-image" src="assets/clubs/club-03.jpg" alt="GFA Elite Club">
+    <div class="club-shade"></div>
+    <div class="club-top"><div class="club-number">03</div><div class="club-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+    <div class="club-bottom">
+      <span class="club-tag">SPORTS & GAMES</span>
+      <h3>GFA Elite Club</h3>
+      <p>The school’s sports and games space—built around practice, teamwork, discipline and competition.</p>
+    </div>
+  </article>
+
+  <article class="club-card" data-category="social" data-club="social">
+    <img class="club-image" src="assets/clubs/club-04.jpg" alt="GFA Sagarmatha Club">
+    <div class="club-shade"></div>
+    <div class="club-top"><div class="club-number">04</div><div class="club-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+    <div class="club-bottom">
+      <span class="club-tag">SOCIAL WORK</span>
+      <h3>GFA Sagarmatha Club</h3>
+      <p>A student-led space for social responsibility, service activities and helping the community.</p>
+    </div>
+  </article>
+
+  <article class="club-card" data-category="science" data-club="science">
+    <img class="club-image" src="assets/clubs/club-05.jpg" alt="GFA Science Club">
+    <div class="club-shade"></div>
+    <div class="club-top"><div class="club-number">05</div><div class="club-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+    <div class="club-bottom">
+      <span class="club-tag">DISCOVERY</span>
+      <h3>GFA Science Club</h3>
+      <p>Question, test, observe and explore science through experiments and curiosity.</p>
+    </div>
+  </article>
+
+  <article class="club-card" data-category="arts" data-club="arts">
+    <img class="club-image" src="assets/clubs/club-06.jpg" alt="GFA Arts Club">
+    <div class="club-shade"></div>
+    <div class="club-top"><div class="club-number">06</div><div class="club-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+    <div class="club-bottom">
+      <span class="club-tag">CREATIVE ARTS</span>
+      <h3>GFA Arts Club</h3>
+      <p>A colourful space for drawing, design, craft, visual expression and creative ideas.</p>
+    </div>
+  </article>
+
+  <article class="club-card" data-category="performing" data-club="performing">
+    <img class="club-image" src="assets/clubs/club-07.jpg" alt="GFA Music and Dance">
+    <div class="club-shade"></div>
+    <div class="club-top"><div class="club-number">07</div><div class="club-open"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+    <div class="club-bottom">
+      <span class="club-tag">PERFORMING ARTS</span>
+      <h3>Music & Dance</h3>
+      <p>Rhythm, movement and performance come together for students who love the stage.</p>
+    </div>
+  </article>
+
+</section>
+
+<section class="club-spotlight">
+  <div class="spotlight-box">
+    <div class="spotlight-copy">
+      <div class="eyebrow">THE GFA CLUB SPIRIT</div>
+      <h3>Find your thing. Then make it yours.</h3>
+      <p>
+        A club can be a place to practise a skill, meet teammates, build confidence,
+        solve problems, perform, serve others or simply discover a new interest.
+      </p>
+    </div>
+    <div class="spotlight-orbit"><i class="fa-solid fa-bolt"></i></div>
+  </div>
+</section>
+
+<section class="clubs-closing">
+  <div class="eyebrow">BEYOND THE CLASSROOM</div>
+  <h2>Learn something.<br><em>Make something.</em></h2>
+  <p>
+    The best school memories are often made while creating, competing, performing,
+    experimenting and working together. That is the spirit behind GFA's clubs.
+  </p>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><i class="fa-solid fa-book-open"></i><span>☀</span></div>
+      <div><strong>Golden Future Academy</strong><small>Reaching the new height together</small></div>
+    </div>
+    <p>© Golden Future Academy • Lalbandi-9, Sarlahi</p>
+  </div>
+</footer>
+
+<div class="club-modal" id="clubModal">
+  <div class="club-detail">
+    <button class="modal-close" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <img id="modalImage" src="" alt="">
+    <div class="club-detail-copy">
+      <div class="club-icon" id="modalIcon"><i class="fa-solid fa-star"></i></div>
+      <div class="eyebrow" id="modalTag">GFA CLUB</div>
+      <h2 id="modalTitle">Club</h2>
+      <p id="modalText"></p>
+      <div class="club-pills" id="modalPills"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const video = document.getElementById("heroVideo");
+const soundButton = document.getElementById("soundButton");
+if(soundButton && video){
+  soundButton.addEventListener("click",()=>{
+    video.muted=!video.muted;
+    soundButton.querySelector("i").className=video.muted?"fa-solid fa-volume-xmark":"fa-solid fa-volume-high";
+    soundButton.querySelector("span").textContent=video.muted?"Sound off":"Sound on";
+    if(!video.muted) video.play().catch(()=>{});
+  });
+}
+
+const details = {
+  media:{
+    title:"GFA Media Forge", tag:"MEDIA & COMMUNICATION",
+    icon:"fa-camera-retro",
+    text:"A creative media space where students can explore storytelling, school photography, video ideas, reporting, design and digital communication.",
+    pills:["Storytelling","Photography","Video","Design","Communication"], image:"assets/clubs/club-01.jpg"
+  },
+  tech:{
+    title:"Computer & Robotics Club", tag:"COMPUTER & ROBOTICS",
+    icon:"fa-microchip",
+    text:"A technology-focused club for coding, computer projects, robotics, electronics, problem-solving and hands-on innovation.",
+    pills:["Coding","Robotics","Electronics","Projects","Innovation"], image:"assets/clubs/club-02.jpg"
+  },
+  sports:{
+    title:"GFA Elite Club", tag:"SPORTS & GAMES",
+    icon:"fa-trophy",
+    text:"GFA's sports and games club brings students together around practice, teamwork, discipline and competition across the school's sporting activities.",
+    pills:["Cricket","Table Tennis","Chess","Teamwork","Competition"], image:"assets/clubs/club-03.jpg"
+  },
+  social:{
+    title:"GFA Sagarmatha Club", tag:"SOCIAL RESPONSIBILITY",
+    icon:"fa-hands-holding-circle",
+    text:"A social-work focused club that encourages students to take part in service, responsibility, awareness and activities that support the wider community.",
+    pills:["Service","Awareness","Community","Leadership","Teamwork"], image:"assets/clubs/club-04.jpg"
+  },
+  science:{
+    title:"GFA Science Club", tag:"SCIENCE & DISCOVERY",
+    icon:"fa-flask",
+    text:"A place for curious minds to explore experiments, observations, scientific ideas and practical problem-solving.",
+    pills:["Experiments","Discovery","Observation","Innovation","Curiosity"], image:"assets/clubs/club-05.jpg"
+  },
+  arts:{
+    title:"GFA Arts Club", tag:"ART & CREATIVITY",
+    icon:"fa-palette",
+    text:"A creative space for students to express ideas through visual art, drawing, design, craft and imaginative work.",
+    pills:["Drawing","Craft","Design","Creativity","Expression"], image:"assets/clubs/club-06.jpg"
+  },
+  performing:{
+    title:"GFA Music & Dance", tag:"PERFORMING ARTS",
+    icon:"fa-music",
+    text:"A performing-arts space for students who enjoy rhythm, music, dance, stage performance and expressing themselves through performance.",
+    pills:["Music","Dance","Performance","Rhythm","Stage"], image:"assets/clubs/club-07.jpg"
+  }
+};
+
+const modal=document.getElementById("clubModal");
+const close=document.getElementById("modalClose");
+const cards=document.querySelectorAll(".club-card");
+
+cards.forEach(card=>{
+  card.addEventListener("click",()=>{
+    const d=details[card.dataset.club];
+    document.getElementById("modalImage").src=d.image;
+    document.getElementById("modalImage").alt=d.title;
+    document.getElementById("modalTag").textContent=d.tag;
+    document.getElementById("modalTitle").textContent=d.title;
+    document.getElementById("modalText").textContent=d.text;
+    document.getElementById("modalIcon").innerHTML='<i class="fa-solid '+d.icon+'"></i>';
+    document.getElementById("modalPills").innerHTML=d.pills.map(x=>'<span class="club-pill">'+x+'</span>').join("");
+    modal.classList.add("open");
+    document.body.style.overflow="hidden";
+  });
+});
+function closeModal(){
+  modal.classList.remove("open");
+  document.body.style.overflow="";
+}
+close.addEventListener("click",closeModal);
+modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+
+const chips=document.querySelectorAll(".club-chip");
+chips.forEach(chip=>{
+  chip.addEventListener("click",()=>{
+    chips.forEach(c=>c.classList.remove("active"));
+    chip.classList.add("active");
+    const f=chip.dataset.filter;
+    cards.forEach(card=>{
+      card.classList.toggle("hide",f!=="all" && card.dataset.category!==f);
+    });
+  });
+});
+</script>
+</body>
+</html>
